@@ -1,0 +1,123 @@
+/* App Container */
+.app {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* App Title */
+  .app-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add Task Container */
+  .add-task-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Task Container */
+  .task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Task Lists */
+  .task-list,
+  .completed-task-list {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 2.5%;
+    box-sizing: border-box;
+  }
+  
+  /* Task Input and Add Button */
+  .add-task-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .add-task-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-task-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Styling */
+  .task-table,
+  .completed-task-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .task-table td,
+  .completed-task-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Checkbox Styling */
+  .checkbox-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 24px; /* Set the width and height for the circular checkbox */
+    height: 24px;
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid #ddd;
+  }
+  
+  .checkbox-container.small {
+    font-size: 12px;
+    width: 18px; /* Adjust size for small checkbox */
+    height: 18px;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the checkmark */
+    height: 12px; /* Adjust the checkmark size */
+    width: 12px; /* Adjust the checkmark size */
+    background-color: #eee;
+    border-radius: 50%; /* Make it circular */
+    display: none; /* Hide by default */
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark {
+    display: block; /* Show when checked */
+    background-color: #007bff;
+  }
+  
+  /* Completed Task Styling */
+  .completed-task {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
